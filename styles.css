@@ -1,0 +1,147 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding-top: 120px; /* Espaço igual à altura da Navbar para o conteúdo começar abaixo dela */
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px; /* Limita a largura máxima do container */
+  width: 100%; /* Garante que o container ocupe toda a largura máxima disponível */
+  text-align: center; /* Centraliza o conteúdo dentro do container */
+  margin: 20px auto; /* Centraliza o container na página */
+}
+
+.input-section {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="number"],
+select {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #0e1b33;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #1c32b1;
+}
+
+#resultado {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+#texto {
+  display: none;
+}
+
+#ADULTOS {
+  font-size: small;
+}
+
+#logo {
+  width: 30px; /* Tamanho do logo */
+  height: auto;
+}
+
+/* Estilos para Navbar */
+.navbar {
+  background-color: #0e1b33; /* Cor de fundo azul marinho */
+  width: 100%;
+  padding: 1px 0;
+  position: fixed; /* Fixa a Navbar na parte superior da tela */
+  top: 0; /* Alinha a Navbar no topo da tela */
+  z-index: 1000; /* Garante que a Navbar esteja acima de outros elementos */
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  color: #ffffff; /* Cor do texto do logo */
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.navbar-brand img {
+  margin-right: 5px; /* Espaçamento entre o ícone do logo e o texto */
+}
+
+.navbar-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin-left: 15px;
+  position: relative;
+}
+
+.nav-link {
+  color: white; /* Cor do texto dos links */
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 10px 15px;
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Estilo corrigido para botão com id button_1 */
+#button_1 {
+  background-color: #4caf50;
+}

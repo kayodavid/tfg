@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora TFG (CKD-EPI 2021)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="logo.jpg" alt="Logo" id="logo" width="30" height="24">
+        <span style="color: #0e1b33;"> <strong>Scientific Health</strong></span>
+      </a>
+      
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle" aria-expanded="false">
+            Calculadoras
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#" class="dropdown-item">TFG</a></li>
+            <li><a href="#" class="dropdown-item">IMC</a></li>
+            <li><a href="#" class="dropdown-item">Calc3</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle" aria-expanded="false">
+            Outros
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#" class="dropdown-item">Outro1</a></li>
+            <li><a href="#" class="dropdown-item">Outro2</a></li>
+            <li><a href="#" class="dropdown-item">Outro3</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle" aria-expanded="false">
+            Outros
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#" class="dropdown-item">Opção 1</a></li>
+            <li><a href="#" class="dropdown-item">Opção 2</a></li>
+            <li><a href="#" class="dropdown-item">Opção 3</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<div class="container mt-4">
+  <h1>Calculadora de TFG (CKD-EPI 2021)</h1>
+  <div class="input-section">
+    <label for="creatinina">Creatinina sérica (mg/dL):</label>
+    <input type="number" id="creatinina" step="0.01" required>
+  </div>
+  <div class="input-section">
+    <label for="idade">Idade (anos):</label>
+    <input type="number" id="idade" required>
+  </div>
+  <div class="input-section">
+    <label for="sexo">Sexo:</label>
+    <select id="sexo" required>
+      <option value="M">Masculino</option>
+      <option value="F">Feminino</option>
+    </select>
+  </div>
+  <button id="button" onclick="calcularTFG()">Calcular TFG</button>
+  <h2><div id="resultado"></div></h2>
+  <br>
+  <div id="texto" style="font-size: smaller; text-align: left; display: none;">
+    <h4>VALOR DE REFERÊNCIA:</h4>
+    <p id="ADULTOS">ADULTOS</p>
+    <p>Normal...................: Superior a 90 mL/min/1,73m² (estádio G1)</p>
+    <p>Redução Discreta.........: 89 a 60 mL/min/1,73m² (estádio G2)</p>
+    <p>Redução Discreta-Moderada: 59 a 45 mL/min/1,73m² (estádio G3a)</p>
+    <p>Redução Moderada-Severa..: 44 a 30 mL/min/1,73m² (estádio G3b)</p>
+    <p>Redução Severa...........: 29 a 15 mL/min/1,73m² (estádio G4)</p>
+    <p>Falência Renal...........: Inferior a 15 mL/min/1,73m² (estádio G5)</p>
+    <br>
+    <p>CRIANÇAS</p>
+    <p>1 semana.....................: 26 a 56 mL/min/1,73m²</p>
+    <p>2 a 8 semanas................: 41 a 91 mL/min/1,73m²</p>
+    <p>8 semanas a 2 anos...........: 74 a 118 mL/min/1,73m²</p>
+    <p>Superior a 2 anos até 18 anos: Acima de 90 mL/min/1,73m²</p>
+  </div>
+  
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
